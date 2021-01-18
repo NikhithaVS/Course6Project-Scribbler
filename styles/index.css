@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montez", cursive;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: 100vh;
+  background: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner{
+    /* background: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    height: 85vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner button{
+    background: #CFB53B;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    color: #000000;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#createPostModal .modal-btn button{
+    padding: 0.6rem 2rem;
+    width: auto;
+}
+
+#createPostModal .modal-content{
+    width: 80%;
+}
