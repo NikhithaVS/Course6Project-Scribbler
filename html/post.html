@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include CSS files -->
+    <link rel="stylesheet" href="../styles/post.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <!-- TODO: Include Font Awesome file here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <!-- TODO: Include Google Fonts file here -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montez&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <title>ScriBBler - Post</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">
+        <div class="logo">
+          <div class="title">ScriBBler</div>
+          <div class="sub-title">Explore, Imagine, Create</div>
+        </div></a
+      >
+      <div>
+        <button id="signUp">Sign Up</button>
+        <button id="signIn">Sign In</button>
+      </div>
+    </header>
+    <section id="postDetails">
+      <div class="title" id="postTitle">
+        Everything you should know about 'module' & 'require' in Node.js
+      </div>
+      <div class="content">
+        <div class="auth-div">
+          <div class="author">Srishti Gupta</div>
+          <button class="pink-btn" id="editBtn">
+            <span class="editText">Edit </span>
+            <i class="fas fa-edit" id="font-icon"></i>
+          </button>
+        </div>
+        <div class="description" id="postDescription">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          sint occaecat cupidatat non proident, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+
+      <div>
+        <button id="likeBtn" class="pink-btn">
+          <i class="fas fa-thumbs-up"></i> <span id="likeText">Like</span>
+        </button>
+      </div>
+      <div class="likeSubText">Be the first one to like this!</div>
+
+      <section class="add-comment mt-1">
+        <div>
+          <textarea
+            rows="8"
+            placeholder="Leave a comment..."
+            id="comment"
+          ></textarea>
+        </div>
+        <button class="pink-btn mt-1" id="commentBtn">Comment</button>
+      </section>
+
+      <section class="all-comments mt-1">
+        <div class="mb-1">All Comments</div>
+      </section>
+    </section>
+
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="closeSignUp">&times;</span>
+        <div class="modal-heading">Get Started</div>
+        <hr class="hr-line" />
+        <form>
+          <div class="input-field">
+            <lable>Name</lable>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="input-field">
+            <lable>Username</lable>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="input-field">
+            <lable>Password</lable>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="input-field">
+            <lable>Confirm Password</lable>
+            <input
+              type="password"
+              placeholder="Re-enter your password"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="modal-btn">
+            <button>Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signInModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="closeSignIn">&times;</span>
+        <div class="modal-heading">Welcome Back!</div>
+        <hr class="hr-line" />
+        <form>
+          <div class="input-field">
+            <lable>Username</lable>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="input-field">
+            <lable>Password</lable>
+            <input
+              type="password"
+              placeholder="Enter your password"
+              required
+              oninvalid="this.setCustomValidity('Please fill out this field.')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+
+          <div class="modal-btn">
+            <button>Sign In</button>
+          </div>
+
+          <div class="member">
+            Not a member?
+            <div id="openSignUp" class="sign-up-link">Sign Up</div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../scripts/post.js"></script>
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/common.js"></script>
+  </body>
+</html>

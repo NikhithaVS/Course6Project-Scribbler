@@ -1,0 +1,83 @@
+#postDetails {
+  margin: 2rem;
+}
+
+#postDetails .auth-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#postDetails .title {
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+#postDetails .description {
+  margin-bottom: 2rem;
+  font-size: 1.02rem;
+}
+
+#postDetails .pink-btn {
+  background: #ed2553;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.author {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.25rem;
+}
+
+.likeSubText {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.all-comments {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.add-comment textarea {
+  background: #ffffff;
+  padding: 0.7rem;
+  border: 1px solid #b1a1a1;
+  font-family: "Ubuntu Mono", monospace;
+  width: 75%;
+}
+
+#postTitle:focus,
+#postDescription:focus {
+  outline: none;
+}
+
+.grayDiv {
+  background: #e2e4e6;
+  width: 75%;
+  padding: 1rem;
+}
+
+.grayDiv:first-child {
+    padding-bottom: 0;
+  }
+
+.commentsDiv {
+  background: #ffffff;
+  padding: 1rem;
+}
